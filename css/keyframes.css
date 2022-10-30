@@ -1,0 +1,101 @@
+@keyframes from_left {
+  to {
+    left: 0;
+  }
+
+  from {
+    left: -120%;
+  }
+}
+
+@keyframes from_right {
+  to {
+    left: 0;
+  }
+
+  from {
+    left: 120%;
+  }
+}
+
+@keyframes from_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bouncy {
+  0% {
+  }
+
+  25% {
+  }
+
+  49% {
+    bottom: 10vh;
+  }
+
+  50% {
+    bottom: 8vh;
+  }
+
+  60% {
+    bottom: 10vh;
+  }
+
+  70% {
+    bottom: 8vh;
+  }
+  80% {
+    bottom: 10vh;
+  }
+
+  100% {
+  }
+}
+@keyframes bouncy_big_screen {
+  0% {
+    bottom: 10vh;
+  }
+
+  25% {
+  }
+
+  49% {
+    bottom: 10vh;
+  }
+
+  50% {
+    bottom: 8vh;
+  }
+
+  60% {
+    bottom: 10vh;
+  }
+
+  70% {
+    bottom: 8vh;
+  }
+  80% {
+    bottom: 10vh;
+  }
+
+  100% {
+  }
+}
