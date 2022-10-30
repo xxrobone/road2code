@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap");
+:root {
+  --bg: #f8f8f8;
+  --text: #232328;
+  --color-alt: #ff7750;
+  --color-visited: #666;
+  --color-gray: #999;
+  --color-dimmed: rgba(0, 0, 0, 0.25);
+  --color-scrollbar-bg: #121212;
+  --color-form-valid: #def0dec4;
+  --color-form-invalid: #e27a68c7;
+  --color-form-invalid: rgb(248, 213, 213);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #232328;
+    --text: #f8f8f8;
+  }
+}
+
+/* 
+body.dark_theme {
+  cursor: pointer;
+  --bg: black;
+  --text: white;
+} */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
+/* 
+body {
+  --bg: black;
+  --text: white;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+input,
+html,
+body,
+article,
+section,
+div,
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-color: none;
+}
+
+h1 {
+  margin: 5% 0 15%;
+  font-size: calc(5vmin + 3vmax);
+  font-weight: 700;
+  line-height: 1;
+  word-spacing: 0.5rem;
+}
+
+h1,
+h4,
+h6 {
+  -webkit-text-stroke: 0.1rem var(--text);
+}
+
+h1:hover,
+h1:active {
+  color: transparent;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: calc(2.25vmin + 2.75vmax);
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: calc(1vmin + 1.5vmax);
+  margin: 2% 0;
+  color: var(--text);
+}
+
+h4 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+h4:hover,
+h4:focus {
+  color: var(--text);
+}
+
+h5 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: var(--text);
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+h6 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.inverted {
+  -webkit-text-stroke: 1px var(--text);
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 125%;
+}
