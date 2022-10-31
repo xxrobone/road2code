@@ -7,7 +7,7 @@
 @import url("css/contact.css");
 @import url("css/coffee.css");
 @import url("css/card.css");
-@import url("css/back_btn.css");
+@import url("css/buttons.css");
 
 header {
   position: fixed;
@@ -256,18 +256,18 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #282828;
+  overflow: hidden;
 }
 
 footer > h3 {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 footer > h3 > a {
   text-transform: uppercase;
   color: var(--color-alt);
-  height: fit-content;
+  overflow: hidden;
 }
 
 footer > h3 > a::before {
