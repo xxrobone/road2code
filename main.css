@@ -273,14 +273,14 @@ section#about > h2 {
   align-items: flex-start;
   height: fit-content;
   background-color: #282828;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 .where_to_start_content > ul {
   list-style-type: none;
 }
 .where_to_start_content > ul > li {
  padding: 1rem 0;
- max-width: 80%;
+ max-width: 100%;
  font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: 125%;
 }
@@ -296,7 +296,7 @@ section#about > h2 {
   color: var(--color-alt);
 }
 .where_to_start_content > p {
-  max-width: 60%;
+  max-width: 100%;
   font-size: 1rem;
 }
 
@@ -433,7 +433,11 @@ footer > h3:hover > a::before {
   }
 
   .where_to_start_content {
-    height: 600px;
+    height: fit-content;
     background-color: #282828;
+  }
+  .where_to_start_content p,  
+  .where_to_start_content li {
+    width: 75%;
   }
 }
