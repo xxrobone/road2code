@@ -1,7 +1,7 @@
 {
   "name": "where2start",
   "version": "1.0.0",
-  "description": "where2start",
+  "description": "where2start coding",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
