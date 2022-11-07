@@ -188,7 +188,7 @@ article {
 
 section {
   position: relative;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -473,7 +473,7 @@ footer > h3:hover > a::before {
     align-items: flex-start;
   }
 
-  section.first {
+  section {
     padding: 20rem 0 0;
   }
 
