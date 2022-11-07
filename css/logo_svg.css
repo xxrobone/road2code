@@ -1,8 +1,8 @@
 #logo_wrapper {
   position: relative;
-  padding-left: 2rem;
-  margin-right: auto;
   width: 75%;
+  padding-left: 2rem;
+  margin-right: auto; 
   border-bottom: transparent;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
   stroke-dasharray: 512px;
   stroke-dashoffset: 512px;
   animation: logo-path 2s ease forwards 0.2s,
-    logo-fill-orange 3s ease-in forwards;
+  logo-fill-orange 3s ease-in forwards;
 }
 
 #logo path:nth-child(2) {
@@ -84,7 +84,7 @@
   stroke-dasharray: 274px;
   stroke-dashoffset: 274px;
   animation: logo-path 2s ease forwards 0.2s,
-    logo-fill-orange 3s ease-in forwards;
+  logo-fill-orange 3s ease-in forwards;
 }
 
 /* #logo path:nth-child(12) {
@@ -103,6 +103,7 @@
   from {
     opacity: 0;
   }
+
   to {
     stroke-dashoffset: 0;
     opacity: 1;
@@ -112,16 +113,20 @@
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0.1;
     fill: var(--text);
   }
+
   50% {
     opacity: 0.3;
   }
+
   75% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
     fill: var(--text);
@@ -131,16 +136,19 @@
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0.1;
     fill: var(--color-alt);
   }
+
   50% {
     opacity: 0.3;
   }
   75% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
     fill: var(--color-alt);
@@ -149,9 +157,9 @@
 
 @media screen and (min-width: 768px) {
   #logo_wrapper {
-    padding-left: 0rem;
-    border-bottom: 1px solid #888;
     width: inherit;
-    height: inherit;  
+    height: inherit; 
+    padding-left: 0rem;
+    border-bottom: 1px solid #888;    
   }
 }

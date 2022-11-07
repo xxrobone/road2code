@@ -29,12 +29,6 @@ body.dark_theme {
   --text: white;
 } */
 
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -44,6 +38,12 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -89,7 +89,6 @@ h1:active {
   color: transparent;
   cursor: pointer;
 }
-
 
 h2 {
   font-size: calc(1.5vmin + 1.75vmax);

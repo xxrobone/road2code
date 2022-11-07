@@ -21,11 +21,13 @@
   stroke-dashoffset: 5587.609375;
   animation: coffee 3s ease-in 0.6s 1 forwards;
 }
+
 @keyframes coffee {
   from {
     stroke-dashoffset: 5587.609375;
     opacity: 0;
   }
+  
   to {
     stroke-dashoffset: 0;
     opacity: 1;

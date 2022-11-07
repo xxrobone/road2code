@@ -4,19 +4,23 @@
     max-width: 80%;
     margin: 100px auto 0;
   }
+
   .swipe_nav, .swipe_nav > li {
     list-style: none;
     padding: 0
   }
+
   .swipe_nav.nav-tabs {
     /* swipe effect on ios */
     display: block;
     overflow: auto;
     white-space: nowrap
   }
+
   .swipe_nav.nav-tabs > li {
     display: inline-block
    }
+
   .swipe_nav.nav-tabs > li > a {
     display: block;
     width: 160px;
@@ -30,6 +34,7 @@
     font-weight: 800;
     transition: all 0.3s ease-in-out;
   }
+  
   .swipe_nav.nav-tabs > li > a:hover {
     background: var(--color-black);
     color: var(--bg);

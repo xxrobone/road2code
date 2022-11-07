@@ -2,15 +2,15 @@
   position: fixed;
   top: 2rem;
   left: 2rem;
-  z-index: 1000;
-  font-size: calc(1vmin + 1.25vmax);
   width: fit-content;
-  height: fit-content;
+  height: fit-content;  
+  font-size: calc(1vmin + 1.25vmax); 
   padding: 8px 12px;
   border-radius: 5%;
   background-color: var(--color-alt);
   color: var(--text);
   transition: all 0.4s ease-in-out;
+  z-index: 1000;
   cursor: pointer;
 }
 
@@ -20,15 +20,15 @@
 }
 .btn {
   position: relative;
-  z-index: 100;
-  font-size: calc(1vmin + 1.25vmax);
-  width: fit-content;
-  height: fit-content;
   padding: 8px 12px;
+  width: fit-content;
+  height: fit-content;  
+  font-size: calc(1vmin + 1.25vmax);  
   border-radius: 5%;
   background-color: var(--color-alt);
   color: var(--text);
   transition: all 0.4s ease-in-out;
+  z-index: 100;
   cursor: pointer;
 }
 
