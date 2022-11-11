@@ -1,4 +1,4 @@
-Excellent work, Robert. I love how you aimed super high and delivered, it's abundantly clear that your web development knowledge is well beyond what is required for this class. You've got a heap of moving parts and there's nothing broken, great stuff. Although the content isn't assessable it's clear you've got a passion for this and I think you'll do really well. I donöt think you caould help my dancing, unfortuntaley!
+Excellent work, Robert. I love how you aimed super high and delivered, it's abundantly clear that your web development knowledge is well beyond what is required for this class. You've got a heap of moving parts and there's nothing broken, great stuff. Although the content isn't assessable it's clear you've got a passion for this and I think you'll do really well. I don't think you could help my dancing, unfortunately!
 
 I've sent you a message in teams chat regarding file paths. If you haven't received it please shoot me an email and I'll explain what is lacking.
 
@@ -17,7 +17,7 @@ GODKÄNT:
 3 separate pages: ✅
 
 A header with a page title on every page: ✅
-   The contact page doesn't have an <h1> but it hhs a clear title. For SEO purposesevery page should have an <h1> tag even if you style it to not look like a main heading
+   The contact page doesn't have an h1 but it hhs a clear title. For SEO purposesevery page should have an h1 tag even if you style it to not look like a main heading
 
 A navigational menu every page with links to the other pages: ❌
    Links not working as expected due to file paths - please review
