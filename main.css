@@ -2,6 +2,7 @@
 @import url("css/typography.css");
 @import url("css/base.css");
 @import url("css/keyframes.css");
+@import url("css/navbar.css");
 
 /* pages */
 @import url("css/pages.css");
@@ -11,28 +12,19 @@
 /* component */
 @import url("css/card.css");
 @import url("css/buttons.css");
-@import url("css/navbar.css");
 
 /* SVG / logo */
 @import url("css/logo_svg.css");
 @import url("css/coffee_svg.css");
 
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  overflow-x: hidden;
-}
 
 header {
   position: sticky;
   top: 0;
   left: 0;
+  padding: 0.25rem auto;
   width: 100%;
   height: 10vh;
-  padding: 0.25rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,17 +32,24 @@ header {
   z-index: 100;
 }
 
-
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
 /* 
 .theme_btn {
   display: none;
 } */
 
 main {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 80%;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
 }
@@ -59,7 +58,6 @@ article {
   position: relative;
   width: 100%;
   height: 90vh;
-  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,20 +76,19 @@ article {
   position: relative;
   animation: from_left 0.6s ease-out 1 forwards;
 }
-
 .headline > h6 {
   position: relative;
   animation: from_right 0.4s ease-out 1 forwards;
 }
 
 .hero {
-  padding-top: 5vh;
   display: grid;
   place-items: center;
 }
 
 .images {
   position: relative;
+  width: 100%;
   width: 100%;
   min-width: 260px;
   height: 360px;
@@ -108,8 +105,8 @@ article {
   position: absolute;
   top: 35vh;
   left: 70%;
+  height: 100%;
   width: 100px;
-  height: fit-content;  
   color: white;
   font-size: 0.6rem;
   white-space: initial;
@@ -121,10 +118,10 @@ article {
 /* using the after selector to create a text animation */
 .talk::after {
   content: "";
+  width: inherit;
   position: absolute;
   top: 0;
   left: 0;
-  width: inherit;
   animation: talk 15s ease-out 0.5s 1 forwards;
   transition: width 0.2s ease-in-out;
 }
@@ -137,22 +134,26 @@ article {
   5% {
     content: "Hi There";
     width: 100%;
-  }  
+  }
+  
 
   15% {
     content: "So you want to learn how 2 code?";
     
-  }  
+  }
+  
   
   30% {
     content: "Im here to help!";
     width: 100%;
-  }  
+  }
+  
   
   45% {
     content: "You can scroll down to read Where to start";
     width: 100%;
   }
+
   
   60% {
     content: "& see how i started";
@@ -182,12 +183,12 @@ article {
 }
 
 section {
+  padding: 10rem 0 0;
   position: relative;
   height: 100%;
-  padding-top: 10rem;  
   display: flex;
   flex-direction: column;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 section#about > h2 {
@@ -196,15 +197,15 @@ section#about > h2 {
 
 .image1 {
   position: absolute;
-  width: 80%;
-  height: 80%;
   display: block;
   opacity: 1;
   /*  background-image: url(/assets/images/bw_rob1.png); */
   background-position: top center;
   background-repeat: no-repeat;
   object-fit: contain;
-  object-position: center;  
+  object-position: center;
+  width: 80%;
+  height: 80%;
   transition: opacity 0.6s ease-in-out;
 }
 
@@ -215,7 +216,6 @@ section#about > h2 {
     visibility: visible;
     background-image: none;
   }
-
   10% {
     opacity: 0.2;
     background-image: url("assets/images/robot.png");
@@ -223,60 +223,50 @@ section#about > h2 {
     left: -2%;
     bottom: -2%;
   }
-
   15.5% {
     opacity: 0.5;
   }
-
   20% {
     opacity: 0.5;
     -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
     left: 5%;
     top: -40%;
   }
-
   22% {
     opacity: 0.5;
     filter: none;
     left: -0%;
     top: -30%;
   }
-
   24% {
     opacity: 1;
     -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
   }
-
   25.5% {
     opacity: 0.5;
     filter: invert(1);
   }
-
   30% {
     filter: none;
     opacity: 1;
   }
-
   40% {
     opacity: 0.5;
     filter: invert(1);
     top: 30%;
     left: -12%;
   }
-
   50% {
     background-image: none;
     filter: none;
     opacity: 1;
   }
-
   60% {
     background-image: url("assets/images/robot.png");
     -webkit-filter: hue-rotate(30deg) invert(1) saturate(1.7);
     opacity: 0.5;
     left: 4%;
   }
-
   80% {
     background-image: none;
     right: 0;
@@ -284,7 +274,6 @@ section#about > h2 {
     top: 0;
     bottom: 0;
   }
-
   100% {
     visibility: visible;
     background-image: none;
@@ -293,8 +282,6 @@ section#about > h2 {
 
 .image2 {
   position: absolute;
-  width: 100%;
-  height: 100%;
   display: block;
   opacity: 0;
   /* background-image: url(/assets/images/robdajoker.png); */
@@ -302,6 +289,8 @@ section#about > h2 {
   background-repeat: no-repeat;
   visibility: hidden;
   background-size: cover;
+  width: 100%;
+  height: 100%;
   transition: opacity 0.6s ease-in-out;
   /*  -webkit-animation: glitch 15s 1 step-end;
   animation: glitch 15s 1 step-end; */
@@ -310,7 +299,6 @@ section#about > h2 {
 .images:hover > .image1 {
   opacity: 0;
 }
-
 .images:hover > .image2 {
   position: absolute;
   opacity: 1;
@@ -319,8 +307,8 @@ section#about > h2 {
 }
 
 .desc {
-  width: 100%;
   margin: 4rem 0 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,8 +316,8 @@ section#about > h2 {
 }
 
 .desc > h2 {
-  padding: 1rem 0;
   letter-spacing: 0.5rem;
+  padding: 1rem 0;
 }
 
 .desc > p > a > span{
@@ -361,31 +349,28 @@ section#about > h2 {
 }
 
 .where_to_start_content {
-  height: 100%;
   margin: 0 auto;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #282828; 
+  height: fit-content;
+  background-color: #282828;
+  padding: 2rem;
 }
-
 .where_to_start_content > ul {
   list-style-type: none;
 }
-
 .where_to_start_content > ul > li {
-  max-width: 100%;
-  padding: 1rem 0; 
-  font-size: clamp(1rem, 2.5vw, 2rem);
+ padding: 1rem 0;
+ max-width: 100%;
+ font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: 125%;
 }
-
 .where_to_start_content > ul > li > a {
   /* Just showing How I did this first then I set this in the base css file */
-  color: var(--color-alt);
   font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: 125%;
+  color: var(--color-alt);
   font-weight: 900;
   letter-spacing: 2px;
   transition: color 0.4s ease-in-out;
@@ -394,10 +379,13 @@ section#about > h2 {
   color: var(--color-alt);
 }
 
+
 .checkmore {
   margin: 2rem 0;
   text-align: center;
 }
+
+
 
 footer {
   position: relative;
@@ -422,11 +410,12 @@ footer > h3 > a {
 
 footer > h3 > a::before {
   content: attr(data-text);
-  position: absolute;
   width: 0;
-  height: fit-content;  
+  height: fit-content;
+  position: absolute;
   color: #fff;
   background-color: var(--bg);
+  width: 0;
   overflow: hidden;
   transition: 0.4s linear;
   z-index: 10;
@@ -466,19 +455,20 @@ footer > h3:hover > a::before {
   }
 
   header {
-    padding: 24px 0 4px;
+    padding: 1rem 2rem;
   }
-
   nav {
     pointer-events: visible;
   }
-
   main {
     width: 60%;
   }
 
+  article {
+    margin-top: 0;
+  }
+
   .hero {
-    padding-top: 0;
     align-items: flex-start;
   }
 
@@ -493,10 +483,11 @@ footer > h3:hover > a::before {
   .talk {
     top: 40vh;
     left: 65%;
-    height: fit-content;
+    height: 100%;
     width: 200px;
     color: white;
-    font-size: 1.4rem;    
+    font-size: 1.4rem;
+    
   }
 
   .desc > h6 {
@@ -521,7 +512,6 @@ footer > h3:hover > a::before {
     transform: rotate(40deg);
     z-index: -1;
   }
-
   .svg_shape_2 {
     top: -10vh;
     left: -10vw;
@@ -547,6 +537,7 @@ footer > h3:hover > a::before {
   }
 }
 
+
 @media screen and (max-width: 362px) {
   main {
     width: 100%;
@@ -559,15 +550,15 @@ footer > h3:hover > a::before {
 
   .image1 {
     position: absolute;
-    width: 100%;
-    height: auto;
     display: block;
     opacity: 1;
     /*  background-image: url(/assets/images/bw_rob1.png); */
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    object-position: center;    
+    object-position: center;
+    width: 100%;
+    height: auto;
     align-self: center;
     transition: opacity 0.6s ease-in-out;
     transform: scale(0.8);

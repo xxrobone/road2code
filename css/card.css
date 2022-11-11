@@ -1,9 +1,9 @@
 .card {
   position: relative;
   margin: 2rem auto;
-  padding: 4%;
   min-height: 300px;
-  max-height: 600px;  
+  max-height: 600px;
+  padding: 4%;
   box-sizing: border-box;
   border-radius: 3px;
   border: 2px solid rgba(136, 136, 136, 0.39);
@@ -47,11 +47,11 @@
   opacity: 0.2;
   z-index: -1;
 
-   /* for ios */
-   max-width: 100%;
-   height: auto;
-   align-self: flex-start;
-   transform: scale(0.8);
+  /* for ios */
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+  transform: scale(0.8);
 }
 
 
@@ -69,3 +69,4 @@
   }
 
 }
+
