@@ -162,6 +162,13 @@
 
 /* Media queries */
 
+
+@media (min-width: 1268px) {
+  .navbar > .menu_items {
+    width: 80vw;   
+  }
+}
+
 @media (min-width: 768px) {
   .navbar {
     margin: 0 auto;
@@ -190,7 +197,7 @@
     position: relative;
     top: 0;
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
